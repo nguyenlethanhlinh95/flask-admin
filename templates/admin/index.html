@@ -1,0 +1,17 @@
+{% extends 'admin/master.html' %}
+
+{% block head_css %}
+    {{ super() }}
+    <link rel="stylesheet" href="{{ url_for('static', filename='sb-admin-2.css') }}" rel="stylesheet">
+{% endblock %}
+
+{% block body %}
+    <div class="panel panel-default">
+      <div class="panel-heading">Panel heading without title</div>
+      <div class="panel-body">
+          <a href="#">
+              user list
+          </a>
+      </div>
+    </div>
+{% endblock %}
